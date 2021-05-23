@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* To start the row from the margin without any
+ space in the begining and at the end*/
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 120%
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-bottom: 6%;
+}
+
+.row {
+    width: 100%;
+}
+
+.row>div {
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    background-color: grey;
+}
+
+.row .sub-heading {
+    background-color: yellow;
+    float: right;
+    position: relative;
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 1.25em;
+    width: 35%;
+    text-align: center;
+    font-weight: bold;
+    border: black solid 1px;
+    border-right: none;
+    border-top: none;
+    margin-bottom: 5px;
+}
+
+.row .sub-heading-content {
+    position: relative;
+    clear: right;
+    padding: 10px;
+    padding-top: 0px;
+    text-align: left;
+    margin: 0;
+    font-size: 1em;
+}
+
+.left-col>.sub-heading {
+    background-color: rgb(165, 161, 161);
+}
+
+.middle-col>.sub-heading {
+    background-color: red;
+    color: white;
+}
+
+.right-col>.sub-heading {
+    background-color: lightgreen;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        border: black solid 1px;
+        width: 32%;
+    }
+
+    .row .sub-heading {
+        width: 37%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        border: black solid 1px;
+        width: 48.5%
+    }
+
+    .right-col {
+        width: 98%;
+    }
+
+    .right-col .sub-heading {
+        width: 17.5%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        border: black solid 1px;
+    }
+
+    .row>div {
+        float: none;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 1%;
+        background-color: grey;
+    }
+
+    .row .sub-heading {
+        font-size: 1em;
+    }
+
+    .row .sub-heading-content {
+        font-size: 0.75em;
+    }
+
+    .main-heading {
+        font-size: 1.5em;
+    }
+
+}
