@@ -1,0 +1,96 @@
+/* Navigation bar */
+.navbar-default {
+    background-color: grey;
+    border: 3px solid black;
+    border-radius: 0%;
+}
+
+/* Black border for all the li elements */
+.nav>li>a {
+    border-bottom: 3px solid black;
+}
+
+/*Brand name */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px;
+    color: black !important;
+}
+
+p {
+    font-weight: 600;
+}
+
+/*`Our Menu` header*/
+h1 {
+    font-weight: bold;
+    color: black;
+}
+
+/*Chicken header in body*/
+h3 {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/*main body content*/
+body>.container-fluid {
+    background-color: grey;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Media query for the Extra Small size screen */
+@media (max-width: 575px) {
+
+    /* Collapsed list background color on button click */
+    .navbar-collapse {
+        background-color: white;
+        text-align: center;
+        margin-left: 0;
+        border-top: 3px solid black !important;
+    }
+
+    .container-fluid {
+        margin-bottom: -10px;
+    }
+
+    li:nth-child(1) {
+        margin-top: -10px;
+    }
+
+}
+
+/* Small and Medium screens */
+@media (min-width: 576px) {
+    .sm-md-hidden {
+        visibility: hidden;
+    }
+}
+
+/* Ipad and Ipad Pro */
+/* @media (min-width: 768px) and (max-width: 1100px) {
+    .navbar-brand {
+        font-size: 3.8em;
+        line-height: 60px !important;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+   
+    h3 {
+        font-size: 2.7em;
+    }
+
+    .navbar-collapse.collapse {
+        height: 100px !important;
+        vertical-align: middle;
+    }
+} */
