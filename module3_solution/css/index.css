@@ -42,7 +42,7 @@ body>.container-fluid {
 }
 
 /* Media query for the Extra Small size screen */
-@media (max-width: 575px) {
+@media (max-width: 767px) {
 
     /* Collapsed list background color on button click */
     .navbar-collapse {
@@ -59,38 +59,4 @@ body>.container-fluid {
     li:nth-child(1) {
         margin-top: -10px;
     }
-
 }
-
-/* Small and Medium screens */
-@media (min-width: 576px) {
-    .sm-md-hidden {
-        visibility: hidden;
-    }
-}
-
-/* Ipad and Ipad Pro */
-/* @media (min-width: 768px) and (max-width: 1100px) {
-    .navbar-brand {
-        font-size: 3.8em;
-        line-height: 60px !important;
-    }
-
-    p {
-        font-size: 2em;
-    }
-
-    h1 {
-        font-size: 3.5em;
-    }
-
-   
-    h3 {
-        font-size: 2.7em;
-    }
-
-    .navbar-collapse.collapse {
-        height: 100px !important;
-        vertical-align: middle;
-    }
-} */
